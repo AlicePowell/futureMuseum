@@ -246,7 +246,7 @@ body.fade-out {
     top: 19vmin;
     background-color: rgb(100, 53, 22);
     z-index: 3;
-    opacity: 0.3;
+    opacity: 0.18;
 }
 
 .colouredFloor {
