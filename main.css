@@ -1,0 +1,110 @@
+
+.overallContainer {
+    position: relative;
+    width: 98vmin;
+    height: 98vmin;
+    margin: auto;
+    background-image: url("./images/light.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    z-index: -2;
+}
+
+.overallContainer {
+    animation-name: fadeimage;
+    animation-duration: 22s;
+}
+
+@keyframes fadeimage {
+    0%  {  background-image: url("./images/champagne.jpg");
+            opacity: 0.2;}
+    3%  {  background-image: url("./images/champagne.jpg");
+            opacity: 1;}
+    55%  {  background-image: url("./images/champagne.jpg");
+                opacity: 1;}
+    100% {  background-image: url("./images/light.jpg");
+  }}
+ 
+
+.primeLink {
+    position: absolute;
+    width: 15vmin;
+    height: 15vmin;
+    background-image: url("./images/molecule4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    opacity: 0.8;
+    left: 38vmin;
+    top: 49vmin;
+    transform: rotate(333deg);
+    animation-name: rotatemolecule;
+    animation-duration: 28s;
+}
+
+
+
+
+
+@keyframes rotatemolecule {
+    from {  width: 55vmin;
+            height: 55vmin;
+            opacity: 0.1;
+            transform: rotate(800deg);}
+    to {    width: 15vmin;
+            height: 15vmin;
+            opacity: 0.8;
+            transform: rotate(333deg);}
+  }
+
+.lightLayer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    opacity: 0;
+    z-index: -1;
+    animation-name: flash;
+    animation-delay: 20s;
+    animation-duration: 4s;
+}
+
+.lightLayer img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes flash {
+    0%  {  opacity: 0;}
+    
+    50% { opacity: 1;}
+    
+    100% {  opacity: 0;}
+  }
+
+
+
+  .whiteContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: white;
+    animation-name: whiten;
+    animation-duration: 25s;
+    z-index: 5;
+}
+
+@keyframes whiten {
+    0% {  background-color: transparent;
+            opacity: 0;
+            }
+    93% {  background-color: transparent;
+        opacity: 0;
+        }
+    100% {    background-color: white;
+            opacity: 1;
+            }
+}

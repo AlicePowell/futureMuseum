@@ -1,0 +1,346 @@
+
+/*body {
+    opacity: 1;
+    transition: 3s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}*/
+
+* {font-family: 'Overpass', sans-serif; font-weight: 100;}
+
+.overallContainer{
+        position: relative;
+        width: 98vmin;
+        height: 98vmin;
+        margin: auto;
+        background-image: url("../images/withBox.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+    }
+
+
+.whiteContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    opacity: 0;
+    background-color: transparent;
+    animation-name: unwhiten;
+    animation-duration: 5s;
+    z-index: 7;
+}
+
+@keyframes unwhiten {
+    from {  background-color: white;
+            opacity: 1;
+            }
+    to {    background-color: transparent;
+            opacity: 0;
+            }
+}
+
+#secondaryContainer {
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+/* fade in details on load*/
+#secondaryContainer {
+    animation-name: slowlyOpen;
+    animation-duration: 10s;
+}
+
+@keyframes slowlyOpen {
+    0% {  opacity:0;}
+    30% {  opacity:0;}
+    100% {    opacity: 1;}
+}
+
+.leftMolecule {
+    position: absolute;
+    width: 15vmin;
+    height: 15vmin;
+    background-image: url("../images/molecule4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    opacity: 0;
+    left: 38vmin;
+    top: 49vmin;
+    transform: rotate(333deg);
+    animation-name: fadeMolecule;
+    animation-duration: 11s;
+}
+
+@keyframes fadeMolecule {
+    0% {  opacity:0.3;}
+    100% {    opacity: 0;}
+}
+
+/* Statue and plinth in original position
+.plinth {
+    position: absolute;
+    width: 26vmin;
+    height: 26vmin;
+    background-image: url("../images/plinth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    left: 70vmin;
+    top: 70vmin;
+    z-index: 2;
+}
+
+.statue {
+    position: absolute;
+        width: 45vmin;
+        height: 60vmin;
+        left: 61.2vmin;
+        top: 30.6vmin;
+        margin: auto;
+        background-image: url("../images/bronze.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: 3;
+        opacity: 0.9;
+} */
+
+/* Statue and plinth made smaller */
+.plinth {
+    position: absolute;
+    width: 23vmin;
+    height: 23vmin;
+    background-image: url("../images/plinth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    left: 72vmin;
+    top: 67.3vmin;
+    z-index: 4;
+}
+
+.statue {
+    position: absolute;
+        width: 39vmin;
+        height: 52vmin;
+        left: 64.7vmin;
+        top: 33.6vmin;
+        margin: auto;
+        background-image: url("../images/bronze.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: 5;
+        opacity: 0.9;
+} 
+
+.lewittDrawing {
+    position: absolute;
+        width: 30vmin;
+        height: 23vmin;
+        right: 54vmin;
+        top: 30vmin;
+        margin: auto;
+}
+
+.lewittDrawing img {
+    position:absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    transform: skewY(358deg);
+}
+
+.galleryPlant {
+    position: absolute;
+    width: 20vmin;
+    height: 28vmin;
+    left: 44.6vmin;
+    top: 43.1vmin;
+    margin: auto;
+    background-image: url("../images/amarylis3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    transform: rotate(1deg);
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    bottom: 43%;
+    left: 29%;
+    transform: rotate(10deg);
+} 
+
+.plantPlinth {
+    position: absolute;
+    width: 10.5vmin;
+    height: 10.5vmin;
+    left: 49.5vmin;
+    top: 57.5vmin;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.reversePlinth {
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg) ;
+}
+
+.seurat {
+    position: absolute;
+    width: 20vmin;
+    height: 7vmin;
+    right: 43vmin;
+    top: 37.5vmin;
+    background-image: url("../images/seurat1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 88%;
+    z-index: 0;
+    opacity: 1;
+    transform: skewY(358deg);
+}
+
+.turner {
+    position: absolute;
+    width: 11.9vmin;
+    height: 7vmin;
+    left: 64vmin;
+    top: 34vmin;
+    background-image: url("../images/turner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 88%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 0.6;
+    
+}
+
+.colouredDivider {
+    position: absolute;
+    width: 36vmin;
+    height: 60.8vmin;
+    left: 52.8vmin;
+    top: 19vmin;
+    background-color: rgb(100, 53, 22);
+    z-index: 3;
+    opacity: 0.3;
+}
+
+.colouredFloor {
+    position: absolute;
+    right: 34vmin;
+    top: 62.6vmin;
+    border-bottom: 5vmin solid rgb(100, 53, 22);
+      border-left: 5.7vmin solid transparent;
+      border-right: 0vmin solid rgb(100, 53, 22);
+      height: 0;
+      width: 12vmin;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.transparentFloor {
+    position: absolute;
+    left: 64vmin;
+    top: 62.6vmin;
+    width: 0;
+    height: 0;
+    border-top: 5vmin solid rgb(100, 53, 22);
+    border-right: 1.3vmin solid transparent;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.transparentContainer {
+    position: absolute;
+    width: 30vmin;
+    height: 20.6vmin;
+    left: 55.75vmin;
+    top: 23vmin;
+    margin: auto;
+    border-radius: 4px;
+    border-radius: 4px;
+    background-image: url("../images/projection.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    z-index: 3;
+    opacity: 0.7;
+    animation-name: project;
+    /*animation-delay: 15s;*/
+    animation-duration: 12s;
+}
+
+@keyframes project {
+    0% { opacity:0};
+    95% { opacity:0};
+    100% { opacity:0.7};}
+
+
+.projectionContainer {
+    width: 100%;
+    height: auto;
+    
+    margin: auto;
+    
+    z-index: 3;
+    opacity: 0.8;
+    animation-name: delayProject;
+     
+    animation-duration: 0.2s;
+    animation-iteration-count: 300;
+}
+
+
+    
+
+    /*0% {    opacity: 0};
+    50% {    opacity: 0};
+    50.5% {   opacity: 1};
+    65% {opacity: 1};
+    100% {opacity: 0.7};*/
+
+@keyframes delayProject {
+    /* from    {
+        opacity: 0.85};
+to      {
+       opacity: 0.7};*/
+}
+
+.flexboxPara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heading {
+    opacity: 1;
+    font-size: 1.8vmin;
+    text-align: center;
+}
