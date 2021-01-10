@@ -1,7 +1,7 @@
 
 // NB This currently replaces in History the url with a new one, so cannot use back button
 function myFunction() {
-    setTimeout(function(){location.href="./mainPage/mainPage.html"}, 27000);
+    setTimeout(function(){location.href="./mainPage/mainPage.html"}, 23500);
     }
 myFunction ()
 ;

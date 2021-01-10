@@ -8,7 +8,8 @@ body.fade-out {
     transition: none;
 }*/
 
-* {font-family: 'Overpass', sans-serif; font-weight: 100;}
+/* * {font-family: 'Work Sans', sans-serif;} */
+* {font-family: 'Inter', sans-serif;}
 
 .overallContainer{
         position: relative;
@@ -30,7 +31,7 @@ body.fade-out {
     opacity: 0;
     background-color: transparent;
     animation-name: unwhiten;
-    animation-duration: 5s;
+    animation-duration: 10s;
     z-index: 7;
 }
 
@@ -54,7 +55,7 @@ body.fade-out {
 /* fade in details on load*/
 #secondaryContainer {
     animation-name: slowlyOpen;
-    animation-duration: 10s;
+    animation-duration: 15s;
 }
 
 @keyframes slowlyOpen {
@@ -122,8 +123,8 @@ body.fade-out {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    left: 72vmin;
-    top: 67.3vmin;
+    left: 73vmin;
+    top: 72.3vmin;
     z-index: 4;
 }
 
@@ -131,8 +132,8 @@ body.fade-out {
     position: absolute;
         width: 39vmin;
         height: 52vmin;
-        left: 64.7vmin;
-        top: 33.6vmin;
+        left: 65.7vmin;
+        top: 38.6vmin;
         margin: auto;
         background-image: url("../images/bronze.png");
         background-repeat: no-repeat;
@@ -161,10 +162,10 @@ body.fade-out {
 
 .galleryPlant {
     position: absolute;
-    width: 20vmin;
-    height: 28vmin;
-    left: 44.6vmin;
-    top: 43.1vmin;
+    width: 25vmin;
+    height: 34vmin;
+    left: 41.6vmin;
+    top: 39.8vmin;
     margin: auto;
     background-image: url("../images/amarylis3.png");
     background-repeat: no-repeat;
@@ -200,6 +201,19 @@ body.fade-out {
     transform: rotate(0deg) ;
 }
 
+.seurat2 {
+    position: absolute;
+    width: 20vmin;
+    height: 7vmin;
+    right: 22vmin;
+    top: 37vmin;
+    background-image: url("../images/seurat2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    z-index: 0;
+    opacity: 0.8;
+}
 .seurat {
     position: absolute;
     width: 20vmin;
@@ -240,20 +254,35 @@ body.fade-out {
 
 .colouredDivider {
     position: absolute;
-    width: 36vmin;
+    width: 32vmin;
     height: 60.8vmin;
-    left: 52.8vmin;
+    left: 56.8vmin;
     top: 19vmin;
-    background-color: rgb(100, 53, 22);
+    background-color: rgb(100, 53, 2);
+    border-style: solid;
+    border-width: 0.2vmin;
+    border-bottom-color: steelblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     z-index: 3;
-    opacity: 0.13;
+    opacity: 0.2;
+    animation-name: bronzeWall;
+    animation-duration: 12s;
+    
+}
+@keyframes bronzeWall {
+    0% {  opacity:0;}
+    90% {  opacity:0;}
+    100% {    opacity: 0.2;}
 }
 
-.colouredFloor {
+.colouredFloor1 {
     position: absolute;
     right: 34vmin;
     top: 62.6vmin;
-    border-bottom: 5vmin solid rgb(100, 53, 22);
+    /*border-bottom: 5vmin solid rgb(100, 53, 22);*/
+    border-bottom: 5vmin solid coral;
       border-left: 5.7vmin solid transparent;
       border-right: 0vmin solid rgb(100, 53, 22);
       height: 0;
@@ -268,67 +297,61 @@ body.fade-out {
     top: 62.6vmin;
     width: 0;
     height: 0;
-    border-top: 5vmin solid rgb(100, 53, 22);
+    /*border-top: 5vmin solid rgb(100, 53, 22);*/
+    border-top: 5vmin solid coral;
     border-right: 1.3vmin solid transparent;
     z-index: 1;
     opacity: 0.2;
 }
 
+.colouredFloor2 {
+    position: absolute;
+    left: 66.2vmin;
+    top: 79.8vmin;
+    border-bottom: 13vmin solid coral;
+      border-left: 1.2vmin solid transparent;
+      border-right: 4.2vmin solid transparent;
+      height: 0;
+      width: 20.9vmin;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+
 .transparentContainer {
     position: absolute;
     width: 30vmin;
     height: 20.6vmin;
-    left: 55.75vmin;
-    top: 23.8vmin;
+    left: 57.75vmin;
+    top: 23.5vmin;
     margin: auto;
     border-radius: 4px;
+   
+}
+
+#projectionContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 3;
+    opacity: 0.8;
     border-radius: 4px;
-    background-image: url("../images/projection.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
     z-index: 3;
     opacity: 0.7;
-    animation-name: project;
-    /*animation-delay: 15s;*/
-    animation-duration: 12s;
-}
-
-@keyframes project {
-    0% { opacity:0};
-    95% { opacity:0};
-    100% { opacity:0.7};}
-
-
-.projectionContainer {
-    width: 100%;
-    height: auto;
-    
-    margin: auto;
-    
-    z-index: 3;
-    opacity: 0.8;
-    animation-name: delayProject;
-     
+    animation-name: flicker;
     animation-duration: 0.2s;
     animation-iteration-count: 300;
 }
 
-
-    
-
-    /*0% {    opacity: 0};
-    50% {    opacity: 0};
-    50.5% {   opacity: 1};
-    65% {opacity: 1};
-    100% {opacity: 0.7};*/
-
-@keyframes delayProject {
-    /* from    {
-        opacity: 0.85};
-to      {
-       opacity: 0.7};*/
+@keyframes flicker {
+    from    {opacity: 0.85};
+    to      {opacity: 0.7};
 }
+
 
 .flexboxPara {
     position: absolute;
@@ -337,10 +360,91 @@ to      {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 4;
 }
 
 #heading {
     opacity: 1;
-    font-size: 1.8vmin;
+    font-size: 2vmin;
+    color: black;
     text-align: center;
+    margin: 3vmin;
+    animation-name: delayText; 
+    animation-duration: 16s;
 }
+@keyframes delayText {
+    0% {  opacity:0;}
+    99.8% {  opacity:0;}
+    100% {    opacity: 1;}}
+
+.triangle-bottom-left, .triangle-top-left {
+    position: relative;
+    opacity: 0.15;
+    z-index: 3;
+    }
+
+
+.triangle-bottom-left {    
+    left: 44.4vmin;
+    top: 1.62vmin;
+    margin: 0 auto;
+    width: 0;
+    height: 0vmin;
+    border-style: solid;
+    border-width: 22vmin 0 0 29vmin;
+    border-color: transparent transparent transparent white;
+    transform: skewX(-62deg);
+    }
+
+.triangle-top-left {
+    left: 53.3vmin;
+    bottom: 25.3vmin;
+    margin: 0 auto;
+    width: 0;
+    height: 0vmin;
+    border-style: solid;
+    border-width: 21vmin 29.4vmin 0 0 ;
+    border-color: white transparent  transparent transparent ;
+    transform: skewY(-60.8deg);
+}
+
+/* Delay lightbeam by 16 seconds */
+.lightbeam {
+    animation-name: delayLightbeam; 
+    animation-duration: 16s;
+}
+@keyframes delayLightbeam {
+    0% {  opacity:0;}
+    99.8% {  opacity:0;}
+    100% {    opacity: 1;}
+}
+
+.creditContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 98vmin;
+    height: 5vmin;
+    margin: auto; 
+}
+#creditLink {
+    right: 0vmin;
+    /* border: 0.1vmin solid grey;
+    border-radius: 0%; */
+    border: 0;
+    font-family: inherit;
+    font-size: 1.7vmin;
+    background-color: white;
+}
+
+button:focus {
+    border: 0;
+    
+}
+
+button:active {
+    border: 0;
+}
+
+
+

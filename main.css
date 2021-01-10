@@ -27,7 +27,7 @@
   }}
  
 
-.primeLink {
+.molecule {
     position: absolute;
     width: 15vmin;
     height: 15vmin;
@@ -41,6 +41,7 @@
     transform: rotate(333deg);
     animation-name: rotatemolecule;
     animation-duration: 28s;
+    
 }
 
 
@@ -48,15 +49,77 @@
 
 
 @keyframes rotatemolecule {
-    from {  width: 55vmin;
-            height: 55vmin;
-            opacity: 0.1;
-            transform: rotate(800deg);}
-    to {    width: 15vmin;
-            height: 15vmin;
-            opacity: 0.8;
-            transform: rotate(333deg);}
-  }
+            0%  {width: 75vmin;
+                height: 75vmin;
+                opacity: 0;
+                transform: rotate(800deg);}
+            
+            100% { width: 15vmin;
+                height: 15vmin;
+                opacity: 0.8;
+                transform: rotate(333deg)}
+          }
+
+
+
+.spatula {
+    position: absolute;
+    width: 30vmin;
+    height: 30vmin;
+    background-image: url("./images/spatula.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    opacity: 0;
+    left: 38vmin;
+    top: 49vmin;
+    transform: rotate(333deg);
+    animation-name: rotateSpatula;
+    animation-duration: 30s;
+        }
+
+@keyframes rotateSpatula {
+            0%  {width: 75vmin;
+                height: 75vmin;
+                opacity: 0.6;
+                transform: rotate(600deg);}
+            
+            100% { width: 15vmin;
+                height: 15vmin;
+                opacity: 0;
+                transform: rotate(333deg)}
+          }
+        
+
+.scissors {
+            position: absolute;
+            width: 30vmin;
+            height: 30vmin;
+            background-image: url("./images/scissors.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+            opacity: 0;
+            left: 38vmin;
+            top: 49vmin;
+            transform: rotate(333deg);
+            animation-name: rotateScissors;
+            animation-duration: 28s;
+            animation-delay: 3s;
+                }
+        
+        @keyframes rotateScissors {
+                    0%  {width: 75vmin;
+                        height: 75vmin;
+                        opacity: 0.6;
+                        transform: rotate(600deg);}
+
+                    
+                    100% { width: 15vmin;
+                        height: 15vmin;
+                        opacity: 0;
+                        transform: rotate(333deg)}
+                  }
 
 .lightLayer {
     position: absolute;
@@ -66,7 +129,7 @@
     opacity: 0;
     z-index: -1;
     animation-name: flash;
-    animation-delay: 20s;
+    animation-delay: 18s;
     animation-duration: 4s;
 }
 
@@ -93,7 +156,7 @@
     opacity: 1;
     background-color: white;
     animation-name: whiten;
-    animation-duration: 25s;
+    animation-duration: 23s;
     z-index: 5;
 }
 
