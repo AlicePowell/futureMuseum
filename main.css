@@ -62,15 +62,15 @@
 
 
 
-.spatula {
+.colour {
     position: absolute;
     width: 30vmin;
     height: 30vmin;
-    background-image: url("./images/spatula.png");
+    background-image: url("./images/blue.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    opacity: 0;
+    opacity: 0.8;
     left: 38vmin;
     top: 49vmin;
     transform: rotate(333deg);

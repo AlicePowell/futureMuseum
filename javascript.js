@@ -1,7 +1,7 @@
 
 // NB This currently replaces in History the url with a new one, so cannot use back button
 function myFunction() {
-    setTimeout(function(){location.href="./mainPage/mainPage.html"}, 23500);
+    setTimeout(function(){window.location="./mainPage/mainPage.html"}, 23500);
     }
 myFunction ()
 ;
@@ -13,7 +13,7 @@ myFunction ()
 
 //Refresh page by just clicking
 document.addEventListener("click", function(){
-   location.href="./mainPage/mainPage.html"});
+    window.location="./mainPage/mainPage.html"});
 
 //Make a variable x the html of the current page
 var x = location.href;

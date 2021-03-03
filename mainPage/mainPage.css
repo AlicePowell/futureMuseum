@@ -11,12 +11,20 @@ body.fade-out {
 /* * {font-family: 'Work Sans', sans-serif;} */
 * {font-family: 'Inter', sans-serif;}
 
+button {
+    all: revert; 
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+  }
+
 .overallContainer{
         position: relative;
         width: 98vmin;
         height: 98vmin;
         margin: auto;
-        background-image: url("../images/withBox.jpg");
+        background-image: url("../images/floatingBackground10shadowperspective.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%;
@@ -55,7 +63,7 @@ body.fade-out {
 /* fade in details on load*/
 #secondaryContainer {
     animation-name: slowlyOpen;
-    animation-duration: 15s;
+    animation-duration: 14s;
 }
 
 @keyframes slowlyOpen {
@@ -123,32 +131,36 @@ body.fade-out {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    left: 73vmin;
-    top: 72.3vmin;
+    left: 69vmin;
+    top: 76.3vmin;
     z-index: 4;
+    animation-name: introPlant;
+    animation-duration: 18s;
 }
 
 .statue {
     position: absolute;
-        width: 39vmin;
-        height: 52vmin;
-        left: 65.7vmin;
-        top: 38.6vmin;
-        margin: auto;
-        background-image: url("../images/bronze.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto 100%;
-        z-index: 5;
-        opacity: 0.9;
+    width: 39vmin;
+    height: 52vmin;
+    left: 61.7vmin;
+    top: 42.6vmin;
+    margin: auto;
+    background-image: url("../images/bronze.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    z-index: 5;
+    opacity: 0.9;
+    animation-name: introPlant;
+    animation-duration: 18s;
 } 
 
-.lewittDrawing {
+/*  .lewittDrawing {
     position: absolute;
-        width: 30vmin;
-        height: 23vmin;
+        width: 28vmin;
+        height: 21vmin;
         right: 54vmin;
-        top: 30vmin;
+        top: 29vmin;
         margin: auto;
 }
 
@@ -158,34 +170,54 @@ body.fade-out {
     height: auto;
     opacity: 0.4;
     transform: skewY(358deg);
+} */
+
+ .lewittDrawing {
+    position: absolute;
+    width: 16vmin;
+    height: 19vmin;
+    left: 56.2vmin;
+    top: 33vmin;
+    margin: auto;
+    animation-name: delayArt;
+    animation-duration: 11s;
 }
+
+.lewittDrawing img {
+    position:absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+} 
 
 .galleryPlant {
     position: absolute;
     width: 25vmin;
-    height: 34vmin;
-    left: 41.6vmin;
-    top: 39.8vmin;
+    height: 44vmin;
+    left: 35.4vmin;
+    top: 21.6vmin;
     margin: auto;
-    background-image: url("../images/amarylis3.png");
+    background-image: url("../images/palmcopy.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    transform: rotate(1deg);
+    transform: rotate(0deg);
     z-index: 3;
-    opacity: 0.8;
+    opacity: 0.95;
+    animation-name: introPlant;
+    animation-duration: 18s;
 }
 
-.overlay {
+/* .overlay {
     position: absolute;
     width: 80%;
     height: auto;
     bottom: 43%;
     left: 29%;
     transform: rotate(10deg);
-} 
+} */
 
-.plantPlinth {
+/* .plantPlinth {
     position: absolute;
     width: 10.5vmin;
     height: 10.5vmin;
@@ -193,7 +225,28 @@ body.fade-out {
     top: 57.5vmin;
     z-index: 2;
     opacity: 0.8;
+} */
+
+.plantPlinth {
+    position: absolute;
+    width: 11vmin;
+    height: 13vmin;
+    left: 45vmin;
+    top: 51vmin;
+    z-index: 2;
+    opacity: 0.95;
+    animation-name: introPlant;
+    animation-duration: 18s;
 }
+
+@keyframes introPlant {
+    0% {opacity:0;}
+    60% {opacity: 0;}
+    75% {opacity: 0.95;}
+    100% {opacity: 0.95;}
+}
+
+
 
 .reversePlinth {
     width: 100%;
@@ -201,86 +254,99 @@ body.fade-out {
     transform: rotate(0deg) ;
 }
 
-.seurat2 {
-    position: absolute;
-    width: 20vmin;
-    height: 7vmin;
-    right: 22vmin;
-    top: 37vmin;
-    background-image: url("../images/seurat2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
-    z-index: 0;
-    opacity: 0.8;
-}
 .seurat {
     position: absolute;
     width: 20vmin;
-    height: 7vmin;
-    right: 43vmin;
+    height: 10vmin;
+    right: 72vmin;
     top: 37.5vmin;
     background-image: url("../images/seurat1.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 88%;
+    background-size: auto 100%;
     z-index: 0;
-    opacity: 1;
-    transform: skewY(358deg);
+    opacity: 0.9;
+    transform: skewY(354deg);
+    opacity: 0.95;
+    animation-name: delayArt;
+    animation-duration: 11s;
+}
+
+@keyframes delayArt {
+    0% {opacity:0;}
+    80% {opacity: 0;}
+    100% {opacity: 0.95;}
 }
 
 .turner {
     position: absolute;
-    width: 11.9vmin;
-    height: 7vmin;
-    left: 64vmin;
-    top: 34vmin;
-    background-image: url("../images/turner.jpg");
+    width: 30vmin;
+    height: 15vmin;
+    right: 41vmin;
+    top: 48.3vmin;
+    background-image: url("../images/Turner2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 88%;
-    z-index: 0;
+    z-index: 3;
     opacity: 1;
+    transform: rotate(347deg);
 }
 
-.frame {
+.easel {
+    position: absolute;
+    width: 30vmin;
+    height: 32vmin;
+    right: 41.2vmin;
+    top: 42vmin;
+    background-image: url("../images/easel1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    z-index: 2;
+    opacity: 0.8;
+    transform: rotate(-3deg);
+}
+
+/* .frame {
     position: absolute;
     width: 100%;
     height: 100%;
     margin: auto;
     opacity: 0.6;
-    
-}
+} */
 
 .colouredDivider {
     position: absolute;
-    width: 32vmin;
-    height: 60.8vmin;
-    left: 56.8vmin;
-    top: 19vmin;
-    background-color: rgb(100, 53, 2);
+    width: 35.6vmin;
+    height: 64vmin;
+    left: 54.8vmin;
+    top: 16.8vmin;
+    /* background-color: rgb(100, 53, 2); */
+    background-color: white;
     border-style: solid;
     border-width: 0.2vmin;
     border-bottom-color: steelblue;
-    border-top: none;
-    border-left: none;
+    /* border-top-color: #000B28; */
+    border-left-color: white;
+    border-top-color: white;
     border-right: none;
     z-index: 3;
-    opacity: 0.2;
+    opacity: 0.23;
     animation-name: bronzeWall;
-    animation-duration: 12s;
+    animation-duration: 14s;
     
 }
 @keyframes bronzeWall {
     0% {  opacity:0;}
     90% {  opacity:0;}
-    100% {    opacity: 0.2;}
+    100% {    opacity: 0.23;}
 }
 
 .colouredFloor1 {
     position: absolute;
-    right: 34vmin;
-    top: 62.6vmin;
+    right: 42.5vmin;
+    top: 60vmin;
     /*border-bottom: 5vmin solid rgb(100, 53, 22);*/
     border-bottom: 5vmin solid coral;
       border-left: 5.7vmin solid transparent;
@@ -289,12 +355,14 @@ body.fade-out {
       width: 12vmin;
     z-index: 1;
     opacity: 0.2;
+    animation-name: delayFloor;
+    animation-duration: 11s;
 }
 
 .transparentFloor {
     position: absolute;
-    left: 64vmin;
-    top: 62.6vmin;
+    left: 55.6vmin;
+    top: 60vmin;
     width: 0;
     height: 0;
     /*border-top: 5vmin solid rgb(100, 53, 22);*/
@@ -302,21 +370,30 @@ body.fade-out {
     border-right: 1.3vmin solid transparent;
     z-index: 1;
     opacity: 0.2;
+    animation-name: delayFloor;
+    animation-duration: 11s;
 }
 
 .colouredFloor2 {
     position: absolute;
-    left: 66.2vmin;
-    top: 79.8vmin;
-    border-bottom: 13vmin solid coral;
-      border-left: 1.2vmin solid transparent;
-      border-right: 4.2vmin solid transparent;
+    left: 71.5vmin;
+    top: 81vmin;
+    border-bottom: 16vmin solid coral;
+      border-left: 0vmin solid transparent;
+      border-right: 5.1vmin solid transparent;
       height: 0;
-      width: 20.9vmin;
+      width: 19vmin;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.15;
+    animation-name: delayFloor;
+    animation-duration: 11s;
 }
 
+@keyframes delayFloor {
+    0% {opacity:0;}
+    80% {opacity: 0;}
+    100% {opacity: 0.15;}
+}
 
 .transparentContainer {
     position: absolute;
@@ -326,6 +403,7 @@ body.fade-out {
     top: 23.5vmin;
     margin: auto;
     border-radius: 4px;
+    z-index: 8;
    
 }
 
@@ -369,6 +447,10 @@ body.fade-out {
     color: black;
     text-align: center;
     margin: 3vmin;
+    /* border-style: solid;
+    border-width:thinnest;
+    border-color: rgb(197, 187, 179);
+    border-radius: 2px; */
     animation-name: delayText; 
     animation-duration: 16s;
 }
@@ -379,7 +461,7 @@ body.fade-out {
 
 .triangle-bottom-left, .triangle-top-left {
     position: relative;
-    opacity: 0.15;
+    opacity: 0.3;
     z-index: 3;
     }
 
@@ -434,17 +516,12 @@ body.fade-out {
     border: 0;
     font-family: inherit;
     font-size: 1.7vmin;
+    color: slategrey;
     background-color: white;
 }
 
-button:focus {
-    border: 0;
-    
-}
 
-button:active {
-    border: 0;
-}
+
 
 
 
