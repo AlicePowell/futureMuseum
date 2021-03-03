@@ -21,8 +21,8 @@ function myFunction () {
     setTimeout (function() {
     var intro = "please contact";
     intro += "<br>";
-    var str = "alice.powell@art-paper-love.com";
-    var emailAdd = str.link(href="mailto:alice.powell@art-paper-love.com");
+    var str = "alicepowell@paperview.org";
+    var emailAdd = str.link(href="mailto:alicepowell@paperview.org");
     slideshow.innerHTML = intro + emailAdd;
     slideshow.style.fontSize = "1.9vmin";
     slideshow.style.fontColor = "black";
