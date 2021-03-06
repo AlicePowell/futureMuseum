@@ -1,15 +1,8 @@
 
-/*body {
-    opacity: 1;
-    transition: 3s opacity;
-}
-body.fade-out {
-    opacity: 0;
-    transition: none;
-}*/
 
 /* * {font-family: 'Work Sans', sans-serif;} */
-* {font-family: 'Inter', sans-serif;}
+/* {font-family: 'Inter', sans-serif;} */
+* {font-family: 'Nunito Sans', sans-serif;}
 
 button {
     all: revert; 
@@ -52,8 +45,7 @@ button {
             }
 }
 
-#secondaryContainer {
-   
+#secondaryContainer { 
     position: absolute;
     width: 100%;
     height: 100%;
@@ -72,6 +64,7 @@ button {
     100% {    opacity: 1;}
 }
 
+
 .leftMolecule {
     position: absolute;
     width: 15vmin;
@@ -80,49 +73,23 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    opacity: 0;
-    left: 38vmin;
-    top: 49vmin;
+    opacity: 0.2;
+    /* left: 38vmin; */
+    left: 23vmin;
+    top: 22vmin;
     transform: rotate(333deg);
-    animation-name: fadeMolecule;
-    animation-duration: 11s;
+    animation-name: rotateMolecule;
+    animation-duration: 80s;
 }
 
-@keyframes fadeMolecule {
-    0% {  opacity:0.3;}
-    100% {    opacity: 0;}
+@keyframes rotateMolecule {
+    0%  {transform: rotate(693deg)}
+    2%  {transform: rotate(692deg)}  
+    /* 71% {transform: rotate(363deg)} */
+    100% {transform: rotate(333deg)}
 }
 
-/* Statue and plinth in original position
-.plinth {
-    position: absolute;
-    width: 26vmin;
-    height: 26vmin;
-    background-image: url("../images/plinth.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
-    left: 70vmin;
-    top: 70vmin;
-    z-index: 2;
-}
 
-.statue {
-    position: absolute;
-        width: 45vmin;
-        height: 60vmin;
-        left: 61.2vmin;
-        top: 30.6vmin;
-        margin: auto;
-        background-image: url("../images/bronze.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto 100%;
-        z-index: 3;
-        opacity: 0.9;
-} */
-
-/* Statue and plinth made smaller */
 .plinth {
     position: absolute;
     width: 23vmin;
@@ -155,23 +122,6 @@ button {
     animation-duration: 18s;
 } 
 
-/*  .lewittDrawing {
-    position: absolute;
-        width: 28vmin;
-        height: 21vmin;
-        right: 54vmin;
-        top: 29vmin;
-        margin: auto;
-}
-
-.lewittDrawing img {
-    position:absolute;
-    width: 100%;
-    height: auto;
-    opacity: 0.4;
-    transform: skewY(358deg);
-} */
-
  .lewittDrawing {
     position: absolute;
     width: 16vmin;
@@ -179,8 +129,9 @@ button {
     left: 59.2vmin;
     top: 33vmin;
     margin: auto;
+    opacity: 0.55;
     animation-name: delayArt;
-    animation-duration: 11s;
+    animation-duration: 16.1s;
 }
 
 .lewittDrawing img {
@@ -189,6 +140,14 @@ button {
     height: auto;
     opacity: 0.9;
 } 
+
+@keyframes delayArt {
+    0% {opacity:0;}
+    55% {opacity: 0;}
+    69% {opacity: 0.95;}
+    99.5% {opacity: 0.95;}
+    100% {opacity: 0.55;}
+}
 
 .galleryPlant {
     position: absolute;
@@ -209,7 +168,7 @@ button {
 }
 
 
-.plantPlinth {
+.plantpotContainer {
     position: absolute;
     width: 11vmin;
     height: 13vmin;
@@ -221,6 +180,12 @@ button {
     animation-duration: 18s;
 }
 
+.plantpotImage {
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg) ;
+}
+
 @keyframes introPlant {
     0% {opacity:0;}
     60% {opacity: 0;}
@@ -229,42 +194,11 @@ button {
 }
 
 
-
-.reversePlinth {
-    width: 100%;
-    height: auto;
-    transform: rotate(0deg) ;
-}
-
-.seurat {
-    position: absolute;
-    width: 20vmin;
-    height: 10vmin;
-    right: 72vmin;
-    top: 37.5vmin;
-    background-image: url("../images/seurat1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
-    z-index: 0;
-    opacity: 0.9;
-    transform: skewY(354deg);
-    opacity: 0.95;
-    animation-name: delayArt;
-    animation-duration: 11s;
-}
-
-@keyframes delayArt {
-    0% {opacity:0;}
-    80% {opacity: 0;}
-    100% {opacity: 0.95;}
-}
-
 .turner {
     position: absolute;
     width: 30vmin;
     height: 15vmin;
-    right: 41vmin;
+    right: 40vmin;
     top: 48.3vmin;
     background-image: url("../images/Turner2.png");
     background-repeat: no-repeat;
@@ -279,7 +213,7 @@ button {
     position: absolute;
     width: 30vmin;
     height: 32vmin;
-    right: 41.2vmin;
+    right: 40.2vmin;
     top: 42vmin;
     background-image: url("../images/easel1.png");
     background-repeat: no-repeat;
@@ -290,14 +224,6 @@ button {
     transform: rotate(-3deg);
 }
 
-/* .frame {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    opacity: 0.6;
-} */
-
 .colouredDivider {
     position: absolute;
     width: 37.6vmin;
@@ -305,20 +231,18 @@ button {
     left: 52.8vmin;
     top: 16.8vmin;
     background-color: rgb(100, 53, 2);
-    /* background-color: white; */
     border-style: solid;
     border-width: 0.2vmin;
     border-bottom-color: steelblue;
-    /* border-top-color: #000B28; */
-    border-left-color: #000B28;
+    border-left-color: steelblue;
     border-top-color: white;
-    border-right: none;
+    border-right: white;
     z-index: 3;
     opacity: 0.13;
     animation-name: bronzeWall;
-    animation-duration: 14s;
-    
+    animation-duration: 14s;  
 }
+
 @keyframes bronzeWall {
     0% {  opacity:0;}
     90% {  opacity:0;}
@@ -331,10 +255,10 @@ button {
     top: 60vmin;
     /*border-bottom: 5vmin solid rgb(100, 53, 22);*/
     border-bottom: 5vmin solid coral;
-      border-left: 5.7vmin solid transparent;
-      border-right: 0vmin solid rgb(100, 53, 22);
-      height: 0;
-      width: 12vmin;
+    border-left: 5.7vmin solid transparent;
+    border-right: 0vmin solid rgb(100, 53, 22);
+    height: 0;
+    width: 12vmin;
     z-index: 1;
     opacity: 0.2;
     animation-name: delayFloor;
@@ -373,7 +297,7 @@ button {
 
 .transparentFloor2 {
     position: absolute;
-    left: 48.6vmin;
+    right: 44.9vmin;
     top: 81vmin;
     width: 0;
     height: 0;
@@ -399,8 +323,7 @@ button {
     top: 23.5vmin;
     margin: auto;
     border-radius: 4px;
-    z-index: 8;
-   
+    z-index: 8;  
 }
 
 #projectionContainer {
@@ -439,10 +362,12 @@ button {
 
 #heading {
     opacity: 1;
-    font-size: 2vmin;
-    color: black;
+    font-size: 1.8vmin;
+    color: grey;
+    font-family: 'Nunito Sans', sans-serif;
     text-align: center;
-    margin: 3vmin;
+    line-height: 80%;
+    margin: 2vmin;
     /* border-style: solid;
     border-width:thinnest;
     border-color: rgb(197, 187, 179);
@@ -500,21 +425,49 @@ button {
 .creditContainer {
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: flex-end;
     width: 98vmin;
-    height: 5vmin;
+    height: 18vmin;
     margin: auto; 
-}
-#creditLink {
-    right: 0vmin;
-    /* border: 0.1vmin solid grey;
-    border-radius: 0%; */
-    border: 0;
-    font-family: inherit;
+    font-family: 'Inter', sans-serif;
     font-size: 1.7vmin;
     color: slategrey;
     background-color: white;
 }
+#creditLink {
+    right: 0vmin;
+    height: 2vmin;
+    /* border: 0.1vmin solid grey;
+    border-radius: 0%; */
+    border: 0;
+    margin: 1.3vmin;
+    margin-right: 0vmin;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.9vmin;
+    color: slategrey;
+    background-color: white;
+}
+
+.creditContainer p {
+    font-family: 'Inter', sans-serif;
+    height: 1.7vmin;
+    left: 0vmin;
+    border: 0;
+    margin: 0.5vmin;
+}
+
+#line2 {
+    width: 62%;
+    height: 5vmin;
+    left: 0vmin;
+    border: 0;
+    margin: 0.5vmin;
+}
+
+
+
+
 
 
 
