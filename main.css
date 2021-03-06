@@ -18,9 +18,7 @@
 
 @keyframes fadeimage {
     0%  {  background-image: url("./images/champagne2.jpeg");
-            opacity: 0.2;}
-    3%  {  background-image: url("./images/champagne2.jpeg");
-            opacity: 0.6;}
+            opacity: 0.5;}
     20% {  background-image: url("./images/champagne2.jpeg");
         opacity: 0.85;}
     40% {  background-image: url("./images/champagne2.jpeg");
