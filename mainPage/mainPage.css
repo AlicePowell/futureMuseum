@@ -197,9 +197,9 @@ button {
 .turner {
     position: absolute;
     width: 30vmin;
-    height: 15vmin;
+    height: 16vmin;
     right: 40vmin;
-    top: 48.3vmin;
+    top: 47.6vmin; 
     background-image: url("../images/Turner2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -214,7 +214,7 @@ button {
     width: 30vmin;
     height: 32vmin;
     right: 40.2vmin;
-    top: 42vmin;
+    top: 42vmin; 
     background-image: url("../images/easel1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -238,7 +238,7 @@ button {
     border-top-color: white;
     border-right: white;
     z-index: 3;
-    opacity: 0.13;
+    opacity: 0.2;
     animation-name: bronzeWall;
     animation-duration: 14s;  
 }
@@ -246,7 +246,7 @@ button {
 @keyframes bronzeWall {
     0% {  opacity:0;}
     90% {  opacity:0;}
-    100% {    opacity: 0.13;}
+    100% {    opacity: 0.2;}
 }
 
 .colouredFloor1 {
@@ -258,7 +258,7 @@ button {
     border-left: 5.7vmin solid transparent;
     border-right: 0vmin solid rgb(100, 53, 22);
     height: 0;
-    width: 12vmin;
+    width: 11.8vmin;
     z-index: 1;
     opacity: 0.2;
     animation-name: delayFloor;
@@ -432,12 +432,12 @@ button {
     margin: auto; 
     font-family: 'Inter', sans-serif;
     font-size: 1.7vmin;
-    color: slategrey;
+    color: #101010;
     background-color: white;
 }
 #creditLink {
     right: 0vmin;
-    height: 2vmin;
+    height: 3vmin;
     /* border: 0.1vmin solid grey;
     border-radius: 0%; */
     border: 0;
@@ -445,7 +445,7 @@ button {
     margin-right: 0vmin;
     font-family: 'Inter', sans-serif;
     font-size: 1.9vmin;
-    color: slategrey;
+    color: #101010;
     background-color: white;
 }
 
@@ -455,6 +455,7 @@ button {
     left: 0vmin;
     border: 0;
     margin: 0.5vmin;
+    text-align:right;
 }
 
 #line2 {
