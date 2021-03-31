@@ -47,7 +47,7 @@ function credit(id) {
         var turner = "J.M.W. Turner, 'The Rooftops of Venice, with the Campanile of San Marco and San Giorgio Maggiore at Sunrise', watercolour on paper, 1840.  Tate Collection."
         var leWitt = "Sol Lewitt, 'Drawing Series 1968 (Fours)', graphite wall drawing, 1968.";
         var bronze = "Grand Tour bronze, 19th Century.";
-        var plant = "Areca palm, heavily and heavenly influenced by Marcel Broodthaers, 'Un Jardin d'Hiver', 1974."
+        var plant = "Areca palm, heavily, heavenly influenced by Marcel Broodthaers, 'Un Jardin d'Hiver', 1974."
         copyright.innerHTML=aP;
         copyright.style.border = "none";
         plusline2.innerHTML=turner;
