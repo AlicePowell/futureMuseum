@@ -1,7 +1,7 @@
 
 // NB This currently replaces in History the url with a new one, so cannot use back button
 function myFunction() {
-    setTimeout(function(){window.location="https://www.paperview.org/mainPage/mainPage.html"}, 23000);
+    setTimeout(function(){window.location="./mainPage/mainPage.html"}, 23000);
     }
 myFunction ()
 ;
