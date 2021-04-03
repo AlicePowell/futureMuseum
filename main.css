@@ -19,13 +19,13 @@
 @keyframes fadeimage {
     /* 0%  {  background-image: url("./images/champagne2.jpeg");
             opacity: 0.2;} */
-    0%  {  background-image: url("./images/champagne2.jpeg");
+    0%  {  background-image: url("./images/champagne2.jpg");
             opacity: 0.6;}
-    20% {  background-image: url("./images/champagne2.jpeg");
+    20% {  background-image: url("./images/champagne2.jpg");
         opacity: 0.85;}
-    40% {  background-image: url("./images/champagne2.jpeg");
+    40% {  background-image: url("./images/champagne2.jpg");
         opacity: 0.85;}
-    55%  {  background-image: url("./images/champagne2.jpeg");
+    55%  {  background-image: url("./images/champagne2.jpg");
                 opacity: 0.6;}
     100% {  background-image: url("./images/light.jpg");
   }}
