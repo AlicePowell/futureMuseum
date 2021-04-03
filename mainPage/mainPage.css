@@ -320,7 +320,7 @@ button {
     height: 0;
     width: 11.8vmin;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.15;
     animation-name: delayFloor;
     animation-duration: 20s;
 }
@@ -335,7 +335,7 @@ button {
     border-top: 5vmin solid coral;
     border-right: 1.6vmin solid transparent;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.15;
     animation-name: delayFloor;
     animation-duration: 20s;
 }
@@ -372,7 +372,7 @@ button {
 @keyframes delayFloor {
     0% {opacity:0;}
     36% {opacity: 0;}
-    50% {opacity: 0.25;}
+    50% {opacity: 0.21;}
     100% {opacity: 0.15;}
 }
 
