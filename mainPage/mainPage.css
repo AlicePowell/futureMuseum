@@ -41,7 +41,7 @@ button {
     0% {  background-color: white;
             opacity: 1;
             }
-    15% {  background-color: white;
+    10% {  background-color: white;
         opacity: 1;
         }
     100% {    background-color: transparent;
@@ -80,7 +80,7 @@ button {
     opacity: 0.35;
     left: 23vmin;
     top: 22vmin;
-    z-index: 8;
+    z-index: 6;
     transform: rotate(333deg);
     animation-name: rotateMolecule;
     animation-duration: 80s;
@@ -108,7 +108,7 @@ button {
     left: 71vmin;
     top: 76.3vmin;
     z-index: 4;
-    animation-name: introPlant;
+    animation-name: introStatue;
     animation-duration: 18s;
 }
 
@@ -125,9 +125,16 @@ button {
     background-size: auto 100%;
     z-index: 9;
     opacity: 0.9;
-    animation-name: introPlant;
+    animation-name: introStatue;
     animation-duration: 18s;
 } 
+
+@keyframes introStatue {
+    0% {opacity:0;}
+    54% {opacity: 0;}
+    69% {opacity: 0.9;}
+    100% {opacity: 0.9;}
+}
 
 .lewittDrawing {
     position: absolute;
@@ -155,7 +162,7 @@ button {
     100% {opacity: 0.55;}
 }
 
-.galleryPlant {
+#galleryPlant {
     position: absolute;
     width: 25vmin;
     height: 44vmin;
@@ -168,20 +175,20 @@ button {
     background-size: auto 100%;
     transform: rotate(0deg);
     z-index: 3;
-    opacity: 0.75;
+    opacity: 0.9;
     animation-name: introPlant;
     animation-duration: 18s;
 }
 
 
-.plantpotContainer {
+#plantpotContainer {
     position: absolute;
     width: 11vmin;
     height: 13vmin;
     left: 45vmin;
     top: 51.5vmin;
     z-index: 2;
-    opacity: 0.75;
+    opacity: 0.9;
     animation-name: introPlant;
     animation-duration: 18s;
 }
@@ -196,7 +203,7 @@ button {
     0% {opacity:0;}
     54% {opacity: 0;}
     69% {opacity: 0.9;}
-    100% {opacity: 0.9;}
+    100% {opacity: 0.7;}
 }
 
 
@@ -372,7 +379,7 @@ button {
 @keyframes delayFloor {
     0% {opacity:0;}
     36% {opacity: 0;}
-    50% {opacity: 0.21;}
+    50% {opacity: 0.25;}
     100% {opacity: 0.15;}
 }
 
@@ -437,6 +444,9 @@ button {
     99.8% {  opacity:0;}
     100% {    opacity: 1;}}
 
+#lightbeam {
+        opacity: 0;
+    }
 
 .triangle-top-left2, .triangle-right, .triangle-corner {
     position: relative;
@@ -474,8 +484,8 @@ button {
     border-left: 30vmin solid transparent;
     }
 
-/* Delay lightbeam by 16 seconds */
-.lightbeam {
+/* Delay lightbeam by 16 seconds 
+#lightbeam {
     animation-name: delayLightbeam; 
     animation-duration: 13.8s;
 }
@@ -483,7 +493,7 @@ button {
     0% {  opacity:0;}
     99.8% {  opacity:0;}
     100% {    opacity: 1;}
-}
+}*/
 
 /* Add links and credits */
 .extrasContainer {
@@ -498,7 +508,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 88vmin;
+    width: 86vmin;
     height: 18vmin;
     margin: auto; 
     font-family: 'Inter', sans-serif;
@@ -522,7 +532,7 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 10vmin;
+    width: 12vmin;
     height: 18vmin;
     margin: auto; 
 }
@@ -572,9 +582,9 @@ button {
     text-align: right;
 }
 
-#line2 {
+#line3 {
     width: 90%;
-    height: 5vmin;
+    height: 6vmin;
     left: 0vmin;
     border: 0;
     margin: 0.5vmin;
