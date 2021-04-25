@@ -9,8 +9,8 @@ var plant2 = document.getElementById("plantpotContainer")
 
 function delayProject () {
     setTimeout (function () {
-        light.style.backgroundImage = "url('../images/projection.jpeg')";
         beam.style.opacity = "1";
+        light.style.backgroundImage = "url('../images/projection.jpeg')";
         plant1.style.opacity = "0.7";
         plant2.style.opacity = "0.7";
         }, 13800);}
@@ -20,19 +20,29 @@ delayProject ();
 //Change the text on the projection
 var slideshow= document.getElementById("heading");
 
+var once = "alicepowell";
+var twice = Math.pow(2,6);
+var thrice = String.fromCharCode(twice);
+var foise = "paperview.o";
+var foisePlus = foise + "rg"
+var fice = once + String.fromCharCode(twice) + foisePlus;
+var putTogether = "please c" 
+putTogether += "ontact: "
+putTogether += "<br>";
+putTogether += "<br>";
+putTogether +=  "<a href=" + "mai" + "lto" + ":" 
++ fice + ">" + once + thrice + foisePlus + "</a>.";
+
+
 function myFunction () {
     setTimeout (function() {
-    var intro = "please contact:";
-    intro += "<br>";
-    intro += "<br>";
-    var str = "alicepowell@paperview.org";
-    var emailAdd = str.link(href="mailto:alicepowell@paperview.org");
-    slideshow.innerHTML = intro + emailAdd;
+    slideshow.innerHTML = putTogether;
     slideshow.style.fontSize = "2.1vmin";
     slideshow.style.fontColor = "black";
-    }, 19000);
+    }, 17500);
 }
 myFunction ();
+
 
 // Add credit link
 var copyright = document.getElementById("creditLink");

@@ -320,7 +320,6 @@ button {
     position: absolute;
     right: 43.5vmin;
     top: 60vmin;
-    /*border-bottom: 5vmin solid rgb(100, 53, 22);*/
     border-bottom: 5vmin solid coral;
     border-left: 5.7vmin solid transparent;
     border-right: 0vmin solid rgb(100, 53, 22);
@@ -437,7 +436,7 @@ button {
     line-height: 80%;
     margin: auto;
     animation-name: delayText; 
-    animation-duration: 15.8s;
+    animation-duration: 13.8s;
 }
 @keyframes delayText {
     0% {  opacity:0;}
